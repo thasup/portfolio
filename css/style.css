@@ -146,6 +146,17 @@ body {
 }
 
 /* -------------------- 
+    Skills Section
+-------------------- */
+#skills .skill-list {
+    list-style: none;
+}
+
+#tab-content {
+    background-color: #fff;
+}
+
+/* -------------------- 
     Resume Section
 -------------------- */
 #resume {
