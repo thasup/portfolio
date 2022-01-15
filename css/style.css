@@ -1,10 +1,16 @@
 /* -------------------- 
-General
+    General
 -------------------- */
+/* Typography */
 body {
     font-family: "Open Sans", sans-serif;
 }
 
+.trademark {
+    font-weight: 700;
+}
+
+/* Links */
 a {
     color: #1e1e1e;
     text-decoration: none;
@@ -17,12 +23,69 @@ a:hover {
     transition: all 0.5s ease-in-out;
 }
 
+/* Sections */
+.section-bg {
+    background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
+    padding: 4rem 0;
+}
+
+.section-shadow {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 1024px) {
+    .bg-image {
+        background-attachment: scroll;
+    }
+}
+
+/* Paralax Image Effect */
+.paralax-overlay {
+    background-color: #415162;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.paralax {
+    position: relative;
+    padding: 8rem 0;
+}
+
 /* -------------------- 
-Hero Section
+    Hero Section
 -------------------- */
 #hero {
     background: url("../img/hero-bg.jpg") center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+}
+
+/* -------------------- 
+    Resume Section
+-------------------- */
+#resume {
+    background-image: url(../img/resume-bg.jpg);
+    padding: 8rem 0;
+    color: #fff;
+}
+
+/* -------------------- 
+    Footer Section
+-------------------- */
+footer {
+    color: #fff;
+    padding: 1rem 0;
 }
