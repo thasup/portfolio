@@ -60,7 +60,8 @@ body {
     background-position: center center;
 }
 
-@media (max-width: 1024px) {
+/* Tablet, Desktop */
+@media (max-width: 576px) {
     .bg-image {
         background-attachment: scroll;
     }
@@ -94,6 +95,28 @@ body {
     height: 100vh;
 }
 
+.hero-title {
+    /* color: #fff; */
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Mobile, Tablet */
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2.5rem;
+    }
+}
+
 .btn-started {
     /* position: absolute;
     bottom: 50px;
@@ -112,6 +135,10 @@ body {
 /* -------------------- 
     About Section
 -------------------- */
+.section-bg h3 {
+    font-weight: 700;
+}
+
 #personal-detail {
     list-style: none;
     padding-left: 0;
@@ -160,15 +187,17 @@ body {
     color: #fff;
 }
 
-#contact .error-message {
+#loading {
     display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
 }
 
+#error-message {
+    display: none;
+}
+
+#success-message {
+    display: none;
+}
 /* -------------------- 
     Footer Section
 -------------------- */
