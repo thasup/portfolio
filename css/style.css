@@ -1,6 +1,13 @@
 /* -------------------- 
     General
 -------------------- */
+/* root */
+:root {
+    --primary-color: #2c3e50;
+    --primary-light-color: #345676;
+    --secondary-color: #62efcd;
+}
+
 /* Typography */
 body {
     font-family: "Open Sans", sans-serif;
@@ -10,23 +17,31 @@ body {
     font-weight: 700;
 }
 
-/* Links */
-a {
-    color: #1e1e1e;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
+.section-bg h2 {
+    font-family: "Playfair Display", serif;
+    color: var(----primary-light-color);
+    position: relative;
+    margin-bottom: 1rem;
 }
 
-a:hover {
-    color: #0078ff;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
+.section-bg h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 5px;
+    background: var(--secondary-color);
+    bottom: -7px;
+    left: 0;
+    border-radius: 3px;
 }
+
+/* Links */
 
 /* Sections */
 .section-bg {
     background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
-    padding: 4rem 0;
+    padding: 6rem 0;
 }
 
 .section-shadow {
@@ -67,10 +82,35 @@ a:hover {
     Hero Section
 -------------------- */
 #hero {
+    /* position: relative; */
     background: url("../img/hero-bg.jpg") center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+}
+
+.btn-started {
+    /* position: absolute;
+    bottom: 50px;
+    left: 50vw; */
+    font-size: 3rem;
+    transition: 0.5s;
+    color: var(----primary-light-color);
+    height: 60px;
+}
+
+.btn-started:hover {
+    padding-top: 10px;
+    color: var(--secondary-color);
+}
+
+/* -------------------- 
+    About Section
+-------------------- */
+#personal-detail {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 /* -------------------- 

@@ -53,7 +53,7 @@
         >
             <h1>I am Thanachon</h1>
             <h2>a full-stack developer</h2>
-            <a href="#navbar" class="scrollto"
+            <a href="#navbar" class="btn-started scrollto"
                 ><i class="fas fa-chevron-down"></i
             ></a>
         </section>
@@ -61,7 +61,7 @@
         <!-- ======= Navbar Section ======= -->
         <header
             id="navbar"
-            class="navbar navbar-expand-lg navbar-dark bg-primary"
+            class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"
         >
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -142,24 +142,80 @@
         <!-- ======= About Me Section ======= -->
         <section id="about" class="section-bg">
             <div class="container-md">
-                <div
-                    class="d-flex flex-column align-items-center justify-content-center"
-                >
-                    <h2>About Me</h2>
-                    <img
-                        src="./img/person.png"
-                        width="250"
-                        height="250"
-                        alt="my_picture_profile"
-                    />
-                    <p class="text-center">
-                        Volutpat diam ut venenatis tellus in. Sit amet
-                        consectetur adipiscing elit duis tristique sollicitudin.
-                        Sapien nec sagittis aliquam malesuada bibendum arcu. Non
-                        quam lacus suspendisse faucibus interdum posuere. Cras
-                        fermentum odio eu feugiat. Aliquet nec ullamcorper sit
-                        amet risus nullam eget.
-                    </p>
+                <h2 class="text-start">About Me</h2>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center">
+                            <img
+                                src="./img/person.png"
+                                width="250"
+                                height="250"
+                                alt="my_picture_profile"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-8 align-self-center">
+                        <div class="row">
+                            <h3>Thanachon Supasatian</h3>
+                            <p>
+                                Volutpat diam ut venenatis tellus in. Sit amet
+                                consectetur adipiscing elit duis tristique
+                                sollicitudin. Sapien nec sagittis aliquam
+                                malesuada bibendum arcu. Non quam lacus
+                                suspendisse faucibus interdum posuere. Cras
+                                fermentum odio eu feugiat. Aliquet nec
+                                ullamcorper sit amet risus nullam eget.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul id="personal-detail">
+                                    <li class="d-flex justify-content-between">
+                                        <strong>Gender:</strong>
+                                        <span>Male</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <strong>Nationality:</strong>
+                                        <span>Thai</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <strong>Date of Birth:</strong>
+                                        <span>18 December 1995</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <strong>City:</strong>
+                                        <span>Nonthaburi</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul id="personal-detail">
+                                    <li class="d-flex justify-content-between">
+                                        <strong>Email:</strong>
+                                        <span>thanachonfirst@hotmail.com</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <strong>Github:</strong>
+                                        <a href="https://github.com/thasup"
+                                            >thasup</a
+                                        >
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <strong>LinkedIn:</strong>
+                                        <a
+                                            href="https://www.linkedin.com/in/thanachon-supasatian-278292159/"
+                                            >Thanachon Supasatian</a
+                                        >
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <strong>Phone:</strong>
+                                        <span>085 406 0527</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -167,19 +223,135 @@
         <!-- ======= Skills Section ======= -->
         <section id="skills" class="section-bg">
             <div class="container-md">
+                <h2 class="text-start">Skills</h2>
                 <div
                     class="d-flex flex-column align-items-center justify-content-center"
                 >
-                    <h2>Skills</h2>
-                    <img src="./img/favicon.ico" alt="my_picture_profile" />
-                    <p>
-                        Volutpat diam ut venenatis tellus in. Sit amet
-                        consectetur adipiscing elit duis tristique sollicitudin.
-                        Sapien nec sagittis aliquam malesuada bibendum arcu. Non
-                        quam lacus suspendisse faucibus interdum posuere. Cras
-                        fermentum odio eu feugiat. Aliquet nec ullamcorper sit
-                        amet risus nullam eget.
-                    </p>
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    data-bs-toggle="tab"
+                                    href="#home"
+                                    data-bcup-haslogintext="no"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    data-bs-toggle="tab"
+                                    href="#profile"
+                                    data-bcup-haslogintext="no"
+                                    >Profile</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link disabled"
+                                    href="#"
+                                    data-bcup-haslogintext="no"
+                                    >Disabled</a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    href="#"
+                                    role="button"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    data-bcup-haslogintext="no"
+                                    >Dropdown</a
+                                >
+                                <div class="dropdown-menu" style="">
+                                    <a
+                                        class="dropdown-item"
+                                        href="#"
+                                        data-bcup-haslogintext="no"
+                                        >Action</a
+                                    >
+                                    <a
+                                        class="dropdown-item"
+                                        href="#"
+                                        data-bcup-haslogintext="no"
+                                        >Another action</a
+                                    >
+                                    <a
+                                        class="dropdown-item"
+                                        href="#"
+                                        data-bcup-haslogintext="no"
+                                        >Something else here</a
+                                    >
+                                    <div class="dropdown-divider"></div>
+                                    <a
+                                        class="dropdown-item"
+                                        href="#"
+                                        data-bcup-haslogintext="no"
+                                        >Separated link</a
+                                    >
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                            <div class="tab-pane fade" id="home">
+                                <p>
+                                    Raw denim you probably haven't heard of them
+                                    jean shorts Austin. Nesciunt tofu stumptown
+                                    aliqua, retro synth master cleanse. Mustache
+                                    cliche tempor, williamsburg carles vegan
+                                    helvetica. Reprehenderit butcher retro
+                                    keffiyeh dreamcatcher synth. Cosby sweater
+                                    eu banh mi, qui irure terry richardson ex
+                                    squid. Aliquip placeat salvia cillum iphone.
+                                    Seitan aliquip quis cardigan american
+                                    apparel, butcher voluptate nisi qui.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade active show" id="profile">
+                                <p>
+                                    Food truck fixie locavore, accusamus
+                                    mcsweeney's marfa nulla single-origin coffee
+                                    squid. Exercitation +1 labore velit, blog
+                                    sartorial PBR leggings next level wes
+                                    anderson artisan four loko farm-to-table
+                                    craft beer twee. Qui photo booth
+                                    letterpress, commodo enim craft beer mlkshk
+                                    aliquip jean shorts ullamco ad vinyl cillum
+                                    PBR. Homo nostrud organic, assumenda labore
+                                    aesthetic magna delectus mollit.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="dropdown1">
+                                <p>
+                                    Etsy mixtape wayfarers, ethical wes anderson
+                                    tofu before they sold out mcsweeney's
+                                    organic lomo retro fanny pack lo-fi
+                                    farm-to-table readymade. Messenger bag
+                                    gentrify pitchfork tattooed craft beer,
+                                    iphone skateboard locavore carles etsy
+                                    salvia banksy hoodie helvetica. DIY synth
+                                    PBR banksy irony. Leggings gentrify squid
+                                    8-bit cred pitchfork.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="dropdown2">
+                                <p>
+                                    Trust fund seitan letterpress, keytar raw
+                                    denim keffiyeh etsy art party before they
+                                    sold out master cleanse gluten-free squid
+                                    scenester freegan cosby sweater. Fanny pack
+                                    portland seitan DIY, art party locavore wolf
+                                    cliche high life echo park Austin. Cred
+                                    vinyl keffiyeh DIY salvia PBR, banh mi
+                                    before they sold out farm-to-table VHS viral
+                                    locavore cosby sweater.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -187,10 +359,10 @@
         <!-- ======= Experience Section ======= -->
         <section id="experience" class="section-bg">
             <div class="container-md">
+                <h2 class="text-start">Experience</h2>
                 <div
                     class="d-flex flex-column align-items-center justify-content-center"
                 >
-                    <h2>Experience</h2>
                     <img src="./img/favicon.ico" alt="my_picture_profile" />
                     <p>
                         Volutpat diam ut venenatis tellus in. Sit amet
@@ -216,7 +388,7 @@
                     </h3>
                     <button
                         type="button"
-                        class="btn btn-success btn-lg text-uppercase"
+                        class="btn btn-primary btn-lg text-uppercase"
                     >
                         <i class="fas fa-arrow-down"></i> Download
                     </button>
@@ -227,10 +399,10 @@
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="section-bg">
             <div class="container-md">
+                <h2 class="text-start">Contact</h2>
                 <div
                     class="d-flex flex-column align-items-center justify-content-center"
                 >
-                    <h2>Contact</h2>
                     <img src="./img/favicon.ico" alt="my_picture_profile" />
                     <p>
                         Volutpat diam ut venenatis tellus in. Sit amet
