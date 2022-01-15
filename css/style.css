@@ -128,6 +128,48 @@ body {
 }
 
 /* -------------------- 
+    Contact Section
+-------------------- */
+.contact-info i {
+    font-size: 2rem;
+}
+
+.social-links {
+    padding-bottom: 20px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    display: inline-block;
+    background: #fff;
+    color: var(--primary-color);
+    line-height: 0;
+    padding: 0.75rem 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    transition: 0.3s;
+    border: 1px solid var(--primary-color);
+}
+
+.social-links a:hover {
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    color: #fff;
+}
+
+#contact .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+/* -------------------- 
     Footer Section
 -------------------- */
 footer {
