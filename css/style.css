@@ -6,6 +6,8 @@
     --primary-color: #2c3e50;
     --primary-light-color: #345676;
     --secondary-color: #62efcd;
+    --white: #fff;
+    --shadow: 2px 2px 3px rgb(56, 56, 56);
 }
 
 /* Typography */
@@ -82,6 +84,33 @@ body {
 .paralax {
     position: relative;
     padding: 8rem 0;
+}
+
+/* back-to-top button */
+.back-to-top {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 50%;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary-color);
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* -------------------- 

@@ -323,18 +323,15 @@
         <section id="experience" class="section-bg">
             <div class="container-md">
                 <h2 class="text-start">Experience</h2>
-                <div
-                    class="d-flex flex-column align-items-center justify-content-center"
-                >
-                    <img src="./img/favicon.ico" alt="my_picture_profile" />
-                    <p>
-                        Volutpat diam ut venenatis tellus in. Sit amet
-                        consectetur adipiscing elit duis tristique sollicitudin.
-                        Sapien nec sagittis aliquam malesuada bibendum arcu. Non
-                        quam lacus suspendisse faucibus interdum posuere. Cras
-                        fermentum odio eu feugiat. Aliquet nec ullamcorper sit
-                        amet risus nullam eget.
-                    </p>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter="filter-app">App</li>
+                            <li data-filter="filter-web">Web</li>
+                            <li data-filter="filter-game">Game</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -512,6 +509,11 @@
                 </div>
             </div>
         </section>
+
+        <!-- back to top button -->
+        <p class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </p>
 
         <!-- ======= Footer Section ======= -->
         <footer class="container-fluid bg-primary">
