@@ -13,6 +13,7 @@ if (typed) {
 }
 const backtotop = $(".back-to-top");
 
+// Add back-to-top button
 function backToTop(element) {
     element.on("click", () => {
         window.scrollTo({
@@ -29,19 +30,7 @@ function backToTop(element) {
         }
     }
 
-    // $(window).on("load", toggleBacktotop);
     $(window).on("scroll", toggleBacktotop);
 }
 
-// function hideButton(element) {
-//     window.on("scroll", () => {
-//         if (window.scrollY < window.innerHeight / 2) {
-//             element.style.display = "none";
-//         } else {
-//             element.style.display = "block";
-//         }
-//     });
-// }
-
 backToTop(backtotop);
-// hideButton(backtotop);
