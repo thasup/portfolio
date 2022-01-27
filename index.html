@@ -167,7 +167,7 @@
 
         <!-- ======= About Me Section ======= -->
         <section id="about" class="section-bg">
-            <div class="container-md">
+            <div class="container">
                 <h2 class="text-start">About Me</h2>
 
                 <div class="row mt-5">
@@ -248,7 +248,7 @@
 
         <!-- ======= Skills Section ======= -->
         <section id="skills" class="section-bg">
-            <div class="container-md">
+            <div class="container">
                 <h2>Skills</h2>
 
                 <div class="mt-5">
@@ -342,19 +342,19 @@
 
         <!-- ======= Experience Section ======= -->
         <section id="experience" class="section-bg">
-            <div class="container-md">
+            <div class="container">
                 <h2 class="text-start">Experience</h2>
 
                 <!-- 1st Showcase Project -->
-                <div class="row py-5">
-                    <div class="col-md-6">
+                <div class="showcase row py-5">
+                    <div class="showcase-img col-md-6">
                         <img
                             src="./img/projects/project-mockup-1.png"
                             width="100%"
                             alt="all-device-mockup"
                         />
                     </div>
-                    <div class="col-md-6 mt-5 d-flex flex-column">
+                    <div class="showcase-info col-md-6 d-flex flex-column">
                         <h3>TinCat</h3>
                         <h5>
                             Lorem ipsum dolor sit amet consectetur adipisicing
@@ -407,16 +407,20 @@
                 <!-- End 1st Showcase Project -->
 
                 <!-- 2nd Showcase Project -->
-                <div class="row py-5">
-                    <div class="col-md-6">
+                <div class="showcase row py-5">
+                    <div class="showcase-img col-md-6">
                         <img
                             src="./img/projects/project-mockup-2.png"
                             width="100%"
                             alt="all-device-mockup"
                         />
                     </div>
-                    <div class="col-md-6 mt-5 d-flex flex-column">
+                    <div class="showcase-info col-md-6 d-flex flex-column">
                         <h3>Travel Planer App</h3>
+                        <h5>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </h5>
                         <p>
                             Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo
@@ -470,15 +474,15 @@
                 <!-- End 2nd Showcase Project -->
 
                 <!-- 3rd Showcase Project -->
-                <div class="row py-5">
-                    <div class="col-md-6">
+                <div class="showcase row py-5">
+                    <div class="showcase-img col-md-6">
                         <img
                             src="./img/projects/project-mockup-1.png"
                             width="100%"
                             alt="all-device-mockup"
                         />
                     </div>
-                    <div class="col-md-6 mt-5 d-flex flex-column">
+                    <div class="showcase-info col-md-6 d-flex flex-column">
                         <h3>Suppee</h3>
 
                         <div class="tech-tags mb-3">
@@ -768,7 +772,7 @@
 
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="section-bg">
-            <div class="container-md">
+            <div class="container">
                 <h2>Contact</h2>
                 <div class="row align-items-start mt-5">
                     <div class="col-md-6">
@@ -824,10 +828,10 @@
                     </div>
                     <div class="col-md-6">
                         <form
-                            action="/form"
                             method="post"
                             role="form"
                             class="contact-form"
+                            data-netlify="true"
                         >
                             <div class="form-floating">
                                 <label for="name">Your Name</label>
