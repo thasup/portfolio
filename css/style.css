@@ -6,8 +6,9 @@
     --primary-color: #2c3e50;
     --primary-light-color: #345676;
     --secondary-color: #62efcd;
+    --overlay: #415162;
     --white: #fff;
-    --shadow: 2px 2px 3px rgb(56, 56, 56);
+    --shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Typography */
@@ -52,7 +53,7 @@ body {
 }
 
 .section-shadow {
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 8px -10px rgba(0, 0, 0, 0.3);
 }
 
 .bg-image {
@@ -71,7 +72,7 @@ body {
 
 /* Paralax Image Effect */
 .paralax-overlay {
-    background-color: #415162;
+    background-color: var(--overlay);
     position: absolute;
     top: 0;
     left: 0px;
@@ -91,8 +92,8 @@ body {
     visibility: hidden;
     opacity: 0;
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background-color: var(--primary-color);
     color: var(--white);
     box-shadow: var(--shadow);
@@ -101,7 +102,7 @@ body {
     right: 20px;
     cursor: pointer;
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 .back-to-top:hover {
@@ -186,12 +187,111 @@ body {
 }
 
 /* -------------------- 
-    Skills Section
+    Experience Section
 -------------------- */
-.btn-xsm {
+.tech-tags .btn-xsm {
     padding: 0.15rem 0.3rem;
     font-size: 0.75rem;
     border-radius: 0.15rem;
+}
+
+/* Portfolio Filter*/
+#portfolio-flters {
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+    padding: 2px 15px;
+    box-shadow: var(--shadow);
+}
+
+#portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    transition: all 0.75s ease-in-out;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.filter-active {
+    color: var(--secondary-color);
+}
+
+/* Portfolio Filter*/
+.portfolio-wrap {
+    position: relative;
+}
+
+.portfolio-wrap::before {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-light-color);
+    z-index: 2;
+    width: 400px;
+    height: 0px;
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+}
+
+.portfolio-wrap img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.portfolio-item {
+    margin: 15px 0px;
+}
+
+.portfolio-info {
+    display: none;
+    position: absolute;
+    top: calc(50% - 95px);
+    left: 0px;
+    z-index: 3;
+    padding: 0 25px;
+    color: var(--white);
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+}
+
+.portfolio-info a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.portfolio-info a:hover {
+    color: var(--secondary-color);
+}
+
+.portfolio-info p {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-links a {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.portfolio-wrap:hover::before {
+    opacity: 0.5;
+    width: 400px;
+    height: 400px;
+}
+
+.portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+    display: block;
 }
 
 /* -------------------- 
