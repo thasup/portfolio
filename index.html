@@ -776,11 +776,6 @@
                 <h2>Contact</h2>
                 <div class="row align-items-start mt-5">
                     <div class="col-md-6">
-                        <p>
-                            Non quam lacus suspendisse faucibus interdum
-                            posuere. Cras fermentum odio eu feugiat. Aliquet nec
-                            ullamcorper sit amet risus nullam eget.
-                        </p>
                         <div class="contact-info d-flex flex-row pt-3">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="d-flex flex-column ms-3">
@@ -833,8 +828,10 @@
                             class="contact-form"
                             data-netlify="true"
                         >
-                            <div class="form-floating">
-                                <label for="name">Your Name</label>
+                            <div class="form-group">
+                                <label for="name" class="col-form-label"
+                                    >Your Name</label
+                                >
                                 <input
                                     type="text"
                                     name="name"
@@ -844,19 +841,23 @@
                                     required
                                 />
                             </div>
-                            <div class="form-floating mt-3">
-                                <label for="email">Your Email</label>
+                            <div class="form-group mt-3">
+                                <label for="email" class="col-form-label"
+                                    >Your Email</label
+                                >
                                 <input
                                     type="email"
                                     class="form-control"
                                     name="email"
                                     id="email"
-                                    placeholder="Your Email"
+                                    placeholder="johndoe@email.com"
                                     required
                                 />
                             </div>
-                            <div class="form-floating mt-3">
-                                <label for="subject">Subject</label>
+                            <div class="form-group mt-3">
+                                <label for="subject" class="col-form-label"
+                                    >Subject</label
+                                >
                                 <input
                                     type="text"
                                     class="form-control"
@@ -867,6 +868,9 @@
                                 />
                             </div>
                             <div class="form-group mt-3">
+                                <label for="message" class="col-form-label"
+                                    >Message</label
+                                >
                                 <textarea
                                     class="form-control"
                                     name="message"
@@ -875,45 +879,8 @@
                                     required
                                 ></textarea>
                             </div>
-                            <div class="my-3">
-                                <div id="loading" class="progress my-3">
-                                    <div
-                                        class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar"
-                                        aria-valuenow="100"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
-                                        style="width: 100%"
-                                    ></div>
-                                </div>
-                                <div
-                                    id="error-message"
-                                    class="alert alert-dismissible alert-danger"
-                                >
-                                    <button
-                                        type="button"
-                                        class="btn-close"
-                                        data-bs-dismiss="alert"
-                                        data-bcup-haslogintext="no"
-                                    ></button>
-                                    <strong>Oh snap!</strong> Change a few
-                                    things up and try submitting again.
-                                </div>
-                                <div
-                                    id="success-message"
-                                    class="alert alert-dismissible alert-success"
-                                >
-                                    <button
-                                        type="button"
-                                        class="btn-close"
-                                        data-bs-dismiss="alert"
-                                        data-bcup-haslogintext="no"
-                                    ></button>
-                                    <strong>Thank you!</strong> Your message has
-                                    been sent.
-                                </div>
-                            </div>
-                            <div class="text-center">
+
+                            <div class="text-center mt-3">
                                 <button type="submit" class="btn btn-success">
                                     Send Message
                                 </button>
