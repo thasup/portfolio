@@ -34,3 +34,30 @@ function backToTop(element) {
 }
 
 backToTop(backtotop);
+
+// Scroll to section when click on navbar link with navbar sticky on top
+const navLinks = $(".nav-link");
+
+function scrollToSection(element) {
+    $("html, body").animate(
+        {
+            scrollTop:
+                $(`#${element}`).offset().top - $("header").innerHeight(),
+        },
+        1
+    );
+}
+
+function addLinks(sectionSections) {
+    for (sectionSection of sectionSections) {
+        const sectionName = sectionSection.id.slice(0, -5);
+
+        $(sectionSection).click(function (e) {
+            e.preventDefault();
+            scrollToSection(sectionName);
+            return false;
+        });
+    }
+}
+
+$(document).ready(addLinks(navLinks));
