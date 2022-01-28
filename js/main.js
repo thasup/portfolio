@@ -61,3 +61,87 @@ function addLinks(sectionSections) {
 }
 
 $(document).ready(addLinks(navLinks));
+
+// Filter portfolio with Isotope script
+const iso = $(".portfolio-container").isotope({
+    // options...
+    itemSelector: ".portfolio-item",
+    layoutMode: "fitRows",
+});
+
+// filter functions
+const filterFns = {
+    // show if contain with react tag
+    react: function () {
+        let name = $(this).find(".tech-tags").children().text();
+        return name.match(/react/);
+    },
+};
+
+// bind filter button click
+let filtersElem = $(".portfolio-flters");
+filtersElem.on("click", function (event) {
+    // only work with buttons
+    if (!matchesSelector(event.target, "li")) {
+        return;
+    }
+    let filterValue = event.target.getAttribute("data-filter");
+    console.log(filterValue);
+    // use matching filter function
+    filterValue = filterFns[filterValue] || filterValue;
+    $(".portfolio-container").isotope({ filter: filterValue });
+});
+
+/////////////////////////
+// let portfolioFilters = $(".portfolio-flters li");
+// console.log(portfolioFilters);
+
+// $(".portfolio-flters li").each((element) => {
+//     console.log(element);
+//     element.on("click", function (e) {
+//         e.preventDefault();
+//         portfolioFilters.forEach(function (el) {
+//             el.classList.remove("filter-active");
+//         });
+//         this.classList.add("filter-active");
+
+//         $isotope.arrange({
+//             filter: this.getAttribute("data-filter"),
+//         });
+//     });
+// });
+
+/////////////////////
+
+//     $(".portfolio-flters").on("click", "li", function (e) {
+//         e.preventDefault();
+//         let filterValue = $(this).attr("data-filter");
+//         // use filterFn if matches value
+//         filterValue = filterFns[filterValue] || filterValue;
+//         $isotope.isotope({ filter: filterValue });
+//     });
+
+$(".portfolio-flters").each(function (i, filter) {
+    const $filter = $(filter);
+    $filter.on("click", "li", function (e) {
+        e.preventDefault();
+        $filter.find("filter-active").removeClass("filter-active");
+        $(this).addClass("filter-active");
+        console.log($filter);
+        console.log(this);
+    });
+});
+
+// const $filters = $(".portfolio-filters li");
+// console.log($filters);
+
+// $(".portfolio-flters").each(function () {
+//     $filters.on("click", "li", function (e) {
+//         e.preventDefault();
+//         $filters.each((element) => element.removeClass("filter-active"));
+//         $(this).addClass("filter-active");
+//         $isotope.isotope.arrange({
+//             filter: this.getAttribute("data-filter"),
+//         });
+//     });
+// });

@@ -207,7 +207,7 @@ body {
 }
 
 /* Portfolio Filter*/
-#portfolio-flters {
+.portfolio-flters {
     margin: 0 auto 35px auto;
     list-style: none;
     text-align: center;
@@ -217,7 +217,7 @@ body {
     box-shadow: var(--shadow);
 }
 
-#portfolio-flters li {
+.portfolio-flters li {
     cursor: pointer;
     display: inline-block;
     padding: 10px 15px 8px 15px;
@@ -230,8 +230,8 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-#portfolio-flters li:hover,
-#portfolio-flters li.filter-active {
+.portfolio-flters li:hover,
+.portfolio-flters li.filter-active {
     color: var(--secondary-color);
 }
 
