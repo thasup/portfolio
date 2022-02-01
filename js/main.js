@@ -54,6 +54,36 @@ function backToTop(element) {
 backToTop(backtotop);
 backToTop(websiteLogo);
 
+// Add active-section in navbar when scroll through that section
+function addActiveSection() {
+    const sections = $("section");
+    sections.each(function (i, section) {
+        let $section = $(section);
+        const currentNavLink = $(`#${section.id}-link`);
+        let position = window.scrollY + 300;
+        //debug
+        // console.log("section", section);
+        // console.log("$section", $section);
+        // console.log("position", position);
+        // console.log("currentNavLink", currentNavLink[0].id);
+        // console.log("offsetTop", section.offsetTop);
+        // console.log("offsetHeight", section.offsetHeight);
+        // console.log(
+        //     "section.offsetTop + section.offsetHeight",
+        //     section.offsetTop + section.offsetHeight
+        // );
+        if (
+            position >= $section.offset().top &&
+            position <= $section.offset().top + $section.outerHeight()
+        ) {
+            currentNavLink.addClass("active-section");
+        } else {
+            currentNavLink.removeClass("active-section");
+        }
+    });
+}
+$(window).on("scroll", addActiveSection);
+
 // Scroll to section when click on navbar link with navbar offset
 const navLinks = $(".sections-name");
 
@@ -92,7 +122,7 @@ const iso = $(".portfolio-container").isotope({
 const filterFns = {
     // show if contain with react tag
     react: function () {
-        let name = $(this).find(".tech-tags").children().text();
+        let name = $(this).find(".tech-tag").children().text();
         return name.match(/react/);
     },
 };

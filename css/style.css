@@ -169,6 +169,10 @@ body {
     cursor: pointer;
 }
 
+#navbar .active-section {
+    color: var(--secondary-color);
+}
+
 /* -------------------- 
     About Section
 -------------------- */
@@ -196,7 +200,7 @@ body {
 /* -------------------- 
     Experience Section
 -------------------- */
-.tech-tags .btn-xsm {
+.tech-tag .btn-xsm {
     padding: 0.15rem 0.3rem;
     font-size: 0.75rem;
     border-radius: 0.15rem;
@@ -208,6 +212,11 @@ body {
 
 .showcase-info h5 {
     font-style: italic;
+}
+
+.showcase-info .showcase-link button {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
 }
 
 /* Desktop */
