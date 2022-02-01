@@ -23,7 +23,7 @@ function backToTop(element) {
     });
 
     function toggleBacktotop() {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 150) {
             backtotop.addClass("active");
         } else {
             backtotop.removeClass("active");
