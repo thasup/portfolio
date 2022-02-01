@@ -36,9 +36,10 @@ function backToTop(element) {
 backToTop(backtotop);
 
 // Scroll to section when click on navbar link with navbar sticky on top
-const navLinks = $(".nav-link");
+const navLinks = $(".sections-name");
 
 function scrollToSection(element) {
+    console.log(`${element}`, $(`#${element}`).offset());
     $("html, body").animate(
         {
             scrollTop:
@@ -48,11 +49,11 @@ function scrollToSection(element) {
     );
 }
 
-function addLinks(sectionSections) {
-    for (sectionSection of sectionSections) {
-        const sectionName = sectionSection.id.slice(0, -5);
+function addLinks(sections) {
+    for (section of sections) {
+        const sectionName = section.id.slice(0, -5);
 
-        $(sectionSection).click(function (e) {
+        $(section).click(function (e) {
             e.preventDefault();
             scrollToSection(sectionName);
             return false;
@@ -86,62 +87,16 @@ filtersElem.on("click", function (event) {
         return;
     }
     let filterValue = event.target.getAttribute("data-filter");
-    console.log(filterValue);
     // use matching filter function
     filterValue = filterFns[filterValue] || filterValue;
     $(".portfolio-container").isotope({ filter: filterValue });
 });
 
-/////////////////////////
-// let portfolioFilters = $(".portfolio-flters li");
-// console.log(portfolioFilters);
-
-// $(".portfolio-flters li").each((element) => {
-//     console.log(element);
-//     element.on("click", function (e) {
-//         e.preventDefault();
-//         portfolioFilters.forEach(function (el) {
-//             el.classList.remove("filter-active");
-//         });
-//         this.classList.add("filter-active");
-
-//         $isotope.arrange({
-//             filter: this.getAttribute("data-filter"),
-//         });
-//     });
-// });
-
-/////////////////////
-
-//     $(".portfolio-flters").on("click", "li", function (e) {
-//         e.preventDefault();
-//         let filterValue = $(this).attr("data-filter");
-//         // use filterFn if matches value
-//         filterValue = filterFns[filterValue] || filterValue;
-//         $isotope.isotope({ filter: filterValue });
-//     });
-
+// change filter-active class on buttons
 $(".portfolio-flters").each(function (i, filter) {
-    const $filter = $(filter);
-    $filter.on("click", "li", function (e) {
-        e.preventDefault();
-        $filter.find("filter-active").removeClass("filter-active");
+    var $filter = $(filter);
+    $filter.on("click", "li", function () {
+        $filter.find(".filter-active").removeClass("filter-active");
         $(this).addClass("filter-active");
-        console.log($filter);
-        console.log(this);
     });
 });
-
-// const $filters = $(".portfolio-filters li");
-// console.log($filters);
-
-// $(".portfolio-flters").each(function () {
-//     $filters.on("click", "li", function (e) {
-//         e.preventDefault();
-//         $filters.each((element) => element.removeClass("filter-active"));
-//         $(this).addClass("filter-active");
-//         $isotope.isotope.arrange({
-//             filter: this.getAttribute("data-filter"),
-//         });
-//     });
-// });
