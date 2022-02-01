@@ -4,7 +4,8 @@
 /* root */
 :root {
     --primary-color: #2c3e50;
-    --primary-light-color: #345676;
+    --primary-light-color: #2c3e5098;
+    --primary-sub-color: #345676;
     --secondary-color: #62efcd;
     --overlay: #415162;
     --white: #fff;
@@ -22,7 +23,7 @@ body {
 
 .section-bg h2 {
     font-family: "Gelasio", serif;
-    color: var(----primary-light-color);
+    color: var(--primary-sub-color);
     position: relative;
     margin-bottom: 1rem;
 }
@@ -153,7 +154,7 @@ body {
     left: 50vw; */
     font-size: 3rem;
     transition: 0.5s;
-    color: var(----primary-light-color);
+    color: var(--primary-sub-color);
     height: 60px;
 }
 
@@ -197,6 +198,10 @@ body {
 
 .showcase-info {
     margin-top: 2rem;
+}
+
+.showcase-info h5 {
+    font-style: italic;
 }
 
 /* Desktop */
@@ -243,7 +248,7 @@ body {
 .portfolio-wrap::before {
     content: "";
     position: absolute;
-    background-color: var(--primary-light-color);
+    background-color: var(--primary-sub-color);
     z-index: 2;
     left: 40px;
     right: 40px;
@@ -252,12 +257,6 @@ body {
     transition: all ease-in-out 0.3s;
     opacity: 0;
 }
-
-/* .portfolio-wrap img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-} */
 
 .portfolio-item {
     margin: 15px 0px;
@@ -325,6 +324,27 @@ body {
         left: 0px;
         font-size: 14px;
     }
+}
+
+/* -------------------- 
+    Education Section
+-------------------- */
+#education .edu-year {
+    color: var(--primary-light-color);
+}
+
+#education h4 {
+    font-family: "Gelasio", serif;
+    color: var(--primary-sub-color);
+}
+
+#education .edu-institute {
+    font-style: italic;
+}
+
+#education #certificate .edu-institute {
+    font-style: italic;
+    margin-bottom: 1rem;
 }
 
 /* -------------------- 

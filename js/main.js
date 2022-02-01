@@ -39,7 +39,6 @@ backToTop(backtotop);
 const navLinks = $(".sections-name");
 
 function scrollToSection(element) {
-    console.log(`${element}`, $(`#${element}`).offset());
     $("html, body").animate(
         {
             scrollTop:
