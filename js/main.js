@@ -11,11 +11,29 @@ if (typed) {
         backDelay: 2000,
     });
 }
-const backtotop = $(".back-to-top");
+
+// Add btn-started function
+const startedBtn = $(".btn-started");
+
+function goToNavbar(element) {
+    element.on("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: $("#navbar").offset().top,
+            behavior: "smooth",
+        });
+    });
+}
+
+goToNavbar(startedBtn);
 
 // Add back-to-top button
+const backtotop = $(".back-to-top");
+const websiteLogo = $(".navbar-brand");
+
 function backToTop(element) {
-    element.on("click", () => {
+    element.on("click", (e) => {
+        e.preventDefault();
         window.scrollTo({
             top: 0,
             behavior: "smooth",
@@ -34,8 +52,9 @@ function backToTop(element) {
 }
 
 backToTop(backtotop);
+backToTop(websiteLogo);
 
-// Scroll to section when click on navbar link with navbar sticky on top
+// Scroll to section when click on navbar link with navbar offset
 const navLinks = $(".sections-name");
 
 function scrollToSection(element) {
