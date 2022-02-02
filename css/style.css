@@ -21,19 +21,19 @@ body {
     font-family: "Gelasio", serif;
     color: var(--primary-sub-color);
     position: relative;
-    margin-bottom: 1rem;
+    text-shadow: 2px 0 3.5px var(--primary-light-color);
 }
 
 .section-bg h2::after {
     content: "";
     position: absolute;
     display: block;
-    width: 70px;
-    height: 5px;
+    width: 80px;
+    height: 7px;
     background: var(--secondary-color);
-    bottom: -7px;
+    bottom: -5px;
     left: 0;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .section-bg h3 {
@@ -171,6 +171,46 @@ body {
 
 #navbar .active-section {
     color: var(--secondary-color);
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-link::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+    display: block;
+}
+
+.nav-dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.dropdown-item {
+    cursor: pointer;
 }
 
 /* -------------------- 

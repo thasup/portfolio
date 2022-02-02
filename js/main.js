@@ -1,4 +1,4 @@
-// Hero section typed effect
+// ------ Hero section typed effect ------
 const typed = $(".typed");
 if (typed) {
     let typed_strings = typed.attr("data-typed-items");
@@ -12,7 +12,7 @@ if (typed) {
     });
 }
 
-// Add btn-started function
+// ------ Add btn-started functionality ------
 const startedBtn = $(".btn-started");
 
 function goToNavbar(element) {
@@ -27,7 +27,7 @@ function goToNavbar(element) {
 
 goToNavbar(startedBtn);
 
-// Add back-to-top button
+// ------ Add back-to-top button ------
 const backtotop = $(".back-to-top");
 const websiteLogo = $(".navbar-brand");
 
@@ -54,7 +54,7 @@ function backToTop(element) {
 backToTop(backtotop);
 backToTop(websiteLogo);
 
-// Add active-section in navbar when scroll through that section
+// ------ Add active-section in navbar when scroll through that section ------
 function addActiveSection() {
     const sections = $("section");
     sections.each(function (i, section) {
@@ -84,7 +84,7 @@ function addActiveSection() {
 }
 $(window).on("scroll", addActiveSection);
 
-// Scroll to section when click on navbar link with navbar offset
+// ------ Scroll to section when click on navbar link with navbar offset ------
 const navLinks = $(".sections-name");
 
 function scrollToSection(element) {
@@ -104,14 +104,13 @@ function addLinks(sections) {
         $(section).click(function (e) {
             e.preventDefault();
             scrollToSection(sectionName);
-            return false;
         });
     }
 }
 
 $(document).ready(addLinks(navLinks));
 
-// Filter portfolio with Isotope script
+// ------ Filter portfolio with Isotope script ------
 const iso = $(".portfolio-container").isotope({
     // options...
     itemSelector: ".portfolio-item",
