@@ -198,15 +198,11 @@ body {
     display: none;
     min-width: 10rem;
     padding: 0.5rem 0;
-    margin: 0;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
+    box-shadow: var(--shadow);
 }
 
 .dropdown-item {
@@ -266,9 +262,9 @@ body {
     }
 }
 
-/* Portfolio Filter*/
-.portfolio-flters {
-    margin: 0 auto 35px auto;
+/* Portfolio Filters*/
+.portfolio-filters {
+    /* margin: 0 auto 10px auto; */
     list-style: none;
     text-align: center;
     background: #fff;
@@ -277,7 +273,7 @@ body {
     box-shadow: var(--shadow);
 }
 
-.portfolio-flters li {
+.portfolio-filters li {
     cursor: pointer;
     display: inline-block;
     padding: 10px 15px 8px 15px;
@@ -288,11 +284,65 @@ body {
     color: var(--primary-color);
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
+    min-width: 70px;
 }
 
-.portfolio-flters li:hover,
-.portfolio-flters li.filter-active {
+.portfolio-filters li:hover,
+.portfolio-filters li.filter-active {
     color: var(--secondary-color);
+}
+
+.filters-section {
+    position: relative;
+    transition: 0.3s;
+}
+
+.filters-section.show-filters {
+    margin-bottom: 3rem;
+}
+
+.primary-filters {
+    z-index: 4;
+}
+
+.secondary-filters {
+    z-index: 3;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    top: 40px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.secondary-filters.active-filters {
+    visibility: visible;
+    opacity: 1;
+    top: 80px;
+}
+
+.filters-more {
+    position: relative;
+    font-size: 1rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 50%;
+    top: -25px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.75rem;
+    transition: 0.5s;
+    z-index: 5;
+}
+
+.filters-more:hover {
+    color: var(--primary-color);
+}
+
+.filters-more.filp {
+    transform: rotateX(180deg);
 }
 
 /* Portfolio Container */
@@ -459,8 +509,16 @@ footer {
     padding: 1rem 0;
 }
 
-footer div p {
+footer div {
     margin: 1rem 0;
+}
+
+footer div p {
+    margin: 0;
+}
+
+footer div p:first-child {
+    margin-bottom: 1rem;
 }
 
 footer .footer-link {

@@ -114,7 +114,7 @@ $(document).ready(addLinks(navLinks));
 const iso = $(".portfolio-container").isotope({
     // options...
     itemSelector: ".portfolio-item",
-    layoutMode: "fitRows",
+    layoutMode: "masonry",
 });
 
 // filter functions
@@ -127,7 +127,7 @@ const filterFns = {
 };
 
 // bind filter button click
-let filtersElem = $(".portfolio-flters");
+let filtersElem = $(".primary-filters");
 filtersElem.on("click", function (event) {
     // only work with buttons
     if (!matchesSelector(event.target, "li")) {
@@ -140,10 +140,23 @@ filtersElem.on("click", function (event) {
 });
 
 // change filter-active class on buttons
-$(".portfolio-flters").each(function (i, filter) {
+$(".primary-filters").each(function (i, filter) {
     var $filter = $(filter);
     $filter.on("click", "li", function () {
         $filter.find(".filter-active").removeClass("filter-active");
         $(this).addClass("filter-active");
     });
 });
+
+// Add more filters
+function moreFilters() {
+    const dropdown = $(".filters-more");
+    dropdown.click((e) => {
+        e.preventDefault();
+        $(".filters-section").toggleClass("show-filters");
+        $(".secondary-filters").toggleClass("active-filters");
+        $(".filters-more").toggleClass("filp");
+    });
+}
+
+moreFilters();

@@ -59,9 +59,7 @@
                     data-typed-items="Full-stack Developer, Self-taught Programmer, Mechanical Engineer"
                 ></span>
             </p>
-            <a class="btn-started scrollto"
-                ><i class="fas fa-chevron-down"></i
-            ></a>
+            <a class="btn-started"><i class="fas fa-chevron-down"></i></a>
         </div>
 
         <!-- ======= Navbar Section ======= -->
@@ -108,7 +106,7 @@
                         </li>
                         <li class="nav-item nav-dropdown">
                             <a
-                                class="nav-link nav-dropdown-link sections-name"
+                                class="nav-link sections-name"
                                 id="experience-link"
                             >
                                 Experience
@@ -523,12 +521,31 @@
                 <!-- Start Portfolio -->
                 <div class="mt-5">
                     <!-- Portfolio Filter -->
-                    <div class="col-12 d-flex justify-content-center">
-                        <ul class="portfolio-flters">
-                            <li data-filter="*" class="filter-active">ALL</li>
-                            <li data-filter=".filter-app">APP</li>
-                            <li data-filter=".filter-web">WEB</li>
-                            <li data-filter=".filter-game">GAME</li>
+                    <div
+                        class="col-12 d-flex flex-column align-items-center justify-content-center filters-section"
+                    >
+                        <!-- Main Filter -->
+                        <ul class="portfolio-filters primary-filters">
+                            <li data-filter="*" class="filter-active">all</li>
+                            <li data-filter=".filter-app">app</li>
+                            <li data-filter=".filter-web">web</li>
+                            <li data-filter=".filter-game">game</li>
+                        </ul>
+                        <!-- filter dropdown button -->
+                        <a class="filters-more"
+                            ><i class="fas fa-chevron-down"></i
+                        ></a>
+
+                        <!-- Sub Filter -->
+                        <ul class="portfolio-filters secondary-filters">
+                            <li data-filter="*" class="filter-active">all</li>
+                            <li data-filter=".filter-react">react</li>
+                            <li data-filter=".filter-node">node</li>
+                            <li data-filter=".filter-bootstrap">bootstrap</li>
+                            <li data-filter=".filter-mongodb">mongodb</li>
+                            <li data-filter=".filter-scss">scss</li>
+                            <li data-filter=".filter-next">next</li>
+                            <li data-filter=".filter-ejs">ejs</li>
                         </ul>
                     </div>
 
@@ -1254,7 +1271,8 @@
                     🤗 Thank you all free photos from
                     <a
                         class="footer-link"
-                        href="https://unsplash.com/s/photos/paperwork?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        target="blank"
+                        href="https://unsplash.com/"
                         >Unsplash</a
                     >
                 </p>
