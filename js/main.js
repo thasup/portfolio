@@ -117,41 +117,59 @@ const iso = $(".portfolio-container").isotope({
     layoutMode: "masonry",
 });
 
-// filter functions
+// filter functions object
 const filterFns = {
     // show if contain with react tag
     react: function () {
+        console.log(this);
         let name = $(this).find(".tech-tag").children().text();
         return name.match(/react/);
     },
 };
 
+// defined variable to hold value
+var primaryFilterValue = "";
+var secondaryFilterValue = "";
+
 // bind filter button click
-let filtersElem = $(".primary-filters");
-filtersElem.on("click", function (event) {
-    // only work with buttons
-    if (!matchesSelector(event.target, "li")) {
-        return;
+$(".portfolio-filters").on("click", function (event) {
+    event.preventDefault();
+
+    if (event.target.parentElement.id === "primary") {
+        // primary filters
+        primaryFilterValue = event.target.getAttribute("data-filter");
+    } else if (event.target.parentElement.id === "secondary") {
+        // secondary filters
+        secondaryFilterValue = event.target.getAttribute("data-filter");
     }
-    let filterValue = event.target.getAttribute("data-filter");
-    // use matching filter function
-    filterValue = filterFns[filterValue] || filterValue;
+
+    let filterValue;
+    filterValue =
+        filterFns[filterValue] ||
+        `${primaryFilterValue}${secondaryFilterValue}`;
+
     $(".portfolio-container").isotope({ filter: filterValue });
 });
 
 // change filter-active class on buttons
-$(".primary-filters").each(function (i, filter) {
-    var $filter = $(filter);
-    $filter.on("click", "li", function () {
-        $filter.find(".filter-active").removeClass("filter-active");
-        $(this).addClass("filter-active");
+function activeFilters(filter) {
+    filter.each(function (i, filter) {
+        var $filter = $(filter);
+        $filter.on("click", "li", function () {
+            $filter.find(".filter-active").removeClass("filter-active");
+            $(this).addClass("filter-active");
+        });
     });
-});
+}
 
-// Add more filters
+activeFilters($(".primary-filters"));
+activeFilters($(".secondary-filters"));
+
+// ------ Add more filters ------
 function moreFilters() {
     const dropdown = $(".filters-more");
     dropdown.click((e) => {
+        console.log("click drop!");
         e.preventDefault();
         $(".filters-section").toggleClass("show-filters");
         $(".secondary-filters").toggleClass("active-filters");
