@@ -365,6 +365,7 @@ body {
     top: 40px;
     bottom: 40px;
     transition: all ease-in-out 0.3s;
+    visibility: hidden;
     opacity: 0;
 }
 
@@ -381,6 +382,7 @@ body {
     padding: 0 25px;
     color: var(--white);
     transition: all ease-in-out 0.3s;
+    visibility: hidden;
     opacity: 0;
     font-size: 16px;
 }
@@ -408,6 +410,7 @@ body {
 
 .portfolio-wrap:hover::before {
     opacity: 0.5;
+    visibility: visible;
     top: 0;
     left: 0;
     right: 0;
@@ -416,11 +419,16 @@ body {
 
 .portfolio-wrap:hover .portfolio-info {
     opacity: 1;
+    visibility: visible;
     display: block;
 }
 
 /* Tablet */
 @media (max-width: 768px) {
+    .filters-section.show-filters {
+        margin-bottom: 6rem;
+    }
+
     .portfolio-info {
         display: none;
         left: calc(50% - 230px);
@@ -429,10 +437,19 @@ body {
 
 /* Mobile */
 @media (max-width: 425px) {
+    .portfolio-filters li {
+        min-width: unset;
+    }
+
+    .filters-section.show-filters {
+        margin-bottom: 8rem;
+    }
+
     .portfolio-info {
         display: none;
         left: 0px;
         font-size: 14px;
+        top: calc(50% - 80px);
     }
 }
 

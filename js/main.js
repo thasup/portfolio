@@ -169,7 +169,6 @@ activeFilters($(".secondary-filters"));
 function moreFilters() {
     const dropdown = $(".filters-more");
     dropdown.click((e) => {
-        console.log("click drop!");
         e.preventDefault();
         $(".filters-section").toggleClass("show-filters");
         $(".secondary-filters").toggleClass("active-filters");
