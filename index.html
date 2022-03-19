@@ -33,6 +33,12 @@
             crossorigin="anonymous"
         /> -->
 
+    <!-- Add GLightBox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+
     <!-- Bootstrap Theme -->
     <link rel="stylesheet" href="./css/bootstrap.css" />
 
@@ -184,12 +190,15 @@
                   </li>
                   <li class="d-flex justify-content-between">
                     <strong>Github:</strong>
-                    <a href="https://github.com/thasup">thasup</a>
+                    <a href="https://github.com/thasup" target="blank"
+                      >thasup</a
+                    >
                   </li>
                   <li class="d-flex justify-content-between">
                     <strong>LinkedIn:</strong>
                     <a
                       href="https://www.linkedin.com/in/thanachon-supasatian-278292159/"
+                      target="blank"
                       >Thanachon Supasatian</a
                     >
                   </li>
@@ -284,26 +293,26 @@
             <!-- text style -->
             <li>
               <strong>Language:</strong>
-              <p>JavaScript, TypeScript, Python, HTML, CSS, SCSS, SQL</p>
+              <p>JavaScript, TypeScript, HTML, CSS, SCSS</p>
             </li>
             <li>
               <strong>Framework/Library:</strong>
               <p>
-                ReactJS, Redux, NextJS, NodeJS, Express, jQuery, EJS, Bootstrap,
-                Material UI, Ant Design
+                ReactJS, NextJS, NodeJS, jQuery, Bootstrap, Material UI, Ant
+                Design, Jest
               </p>
             </li>
             <li>
               <strong>Database:</strong>
-              <p>MySQL, MongoDB, Redis</p>
+              <p>MongoDB</p>
             </li>
             <li>
               <strong>Infrastructure:</strong>
-              <p>Docker, Kubernetes, GKE, Heroku, Netlify</p>
+              <p>Docker, Kubernetes, GitHub Action, GCP, DigitalOcean</p>
             </li>
             <li>
               <strong>Tool:</strong>
-              <p>Git, Postman, Git Bash, Gulp, Webpack, Jest, Jasmine</p>
+              <p>Git, Postman, Git Bash, Gulp, Webpack</p>
             </li>
             <li>
               <strong>Technology:</strong>
@@ -323,42 +332,79 @@
         <div class="showcase row py-5">
           <div class="showcase-img col-md-6">
             <img
-              src="./img/projects/project-mockup-1.png"
+              src="./img/projects/aurapan shop banner 2.webp"
               width="100%"
               alt="all-device-mockup"
             />
           </div>
           <div class="showcase-info col-md-6 d-flex flex-column">
-            <h3>TinCat</h3>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <div class="d-flex flex-row align-items-center">
+              <h3>Aurapan</h3>
+              <span class="badge rounded-pill bg-primary ms-2">Large</span>
+            </div>
+
+            <h5 class="mb-3">Women's Clothing Online Shop</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              mollitia hic expedita repellat, est neque tenetur dicta, aperiam
-              odio assumenda molestias amet nam corrupti quis. Dolores eveniet
-              quia architecto impedit.
+              Aurapan is the beautiful women's clothing e-commerce website built
+              with <strong>microservices architecture</strong>, perform
+              server-side rendering by <strong>Next.js</strong>, developing on
+              <strong>Google Cloud Platform</strong> environment with
+              <strong>Typescript</strong> as a back-end language.
+            </p>
+
+            <p>
+              The project has perform CI/CD process by running automation test
+              <strong>Jest</strong> script with
+              <strong>GitHub Action</strong> workflow and deploy on
+              <strong>DigitalOcean</strong> Kubernetes cluster with
+              full-integrated <strong>Stripe</strong> and
+              <strong>Paypal</strong> payment services.
             </p>
             <div class="tech-tag">
               <button type="button" class="btn btn-xsm btn-outline-primary">
-                HTML
+                Microservices
               </button>
               <button type="button" class="btn btn-xsm btn-outline-primary">
-                CSS
+                ReactJS
               </button>
               <button type="button" class="btn btn-xsm btn-outline-primary">
-                Bootstrap
+                NextJS
               </button>
               <button type="button" class="btn btn-xsm btn-outline-primary">
-                jQuery
+                Docker
+              </button>
+              <button type="button" class="btn btn-xsm btn-outline-primary">
+                Kubernetes
+              </button>
+              <button type="button" class="btn btn-xsm btn-outline-primary">
+                TypeScript
+              </button>
+              <button type="button" class="btn btn-xsm btn-outline-primary">
+                MongoDB
+              </button>
+              <button type="button" class="btn btn-xsm btn-outline-primary">
+                Github Action
               </button>
             </div>
 
             <div class="mt-3 showcase-link">
-              <button type="button" class="btn btn-primary me-1">
+              <a
+                class="btn btn-primary me-1"
+                href="https://www.aurapan.com/"
+                role="button"
+                target="blank"
+              >
                 <i class="fas fa-globe-americas"></i> LIVE DEMO
-              </button>
-              <button type="button" class="btn btn-primary">
+              </a>
+
+              <a
+                class="btn btn-primary me-1"
+                href="https://github.com/thasup/microservices-ecommerce"
+                role="button"
+                target="blank"
+              >
                 <i class="fab fa-github"></i> GITHUB
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -374,36 +420,52 @@
             />
           </div>
           <div class="showcase-info col-md-6 d-flex flex-column">
-            <h3>Travel Planer App</h3>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <div class="d-flex flex-row align-items-center">
+              <h3>Suppee</h3>
+              <span class="badge rounded-pill bg-primary ms-2">Large</span>
+            </div>
+            <h5 class="mb-3">Electronics E-Commerce Store</h5>
+
             <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              Suppee is an e-commerce platform built with the
+              <strong>MERN</strong> stack and <strong>Redux</strong>.
             </p>
             <div class="tech-tag">
-              <button type="button" class="btn btn-xsm btn-primary">
+              <button type="button" class="btn btn-xsm btn-outline-primary">
                 ReactJS
               </button>
-              <button type="button" class="btn btn-xsm btn-primary">
+              <button type="button" class="btn btn-xsm btn-outline-primary">
                 Redux
               </button>
-              <button type="button" class="btn btn-xsm btn-primary">
-                NodeJS
+              <button type="button" class="btn btn-xsm btn-outline-primary">
+                Bootstrap
               </button>
-              <button type="button" class="btn btn-xsm btn-primary">
-                Webpack
+              <button type="button" class="btn btn-xsm btn-outline-primary">
+                MongoDB
+              </button>
+              <button type="button" class="btn btn-xsm btn-outline-primary">
+                NodeJS
               </button>
             </div>
 
             <div class="mt-3 showcase-link">
-              <button type="button" class="btn btn-outline-primary me-1">
+              <a
+                class="btn btn-primary me-1"
+                href="https://thasup-suppee.herokuapp.com/"
+                role="button"
+                target="blank"
+              >
                 <i class="fas fa-globe-americas"></i> LIVE DEMO
-              </button>
-              <button type="button" class="btn btn-outline-primary">
+              </a>
+
+              <a
+                class="btn btn-primary me-1"
+                href="https://github.com/thasup/Suppee"
+                role="button"
+                target="blank"
+              >
                 <i class="fab fa-github"></i> GITHUB
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -413,43 +475,58 @@
         <div class="showcase row py-5">
           <div class="showcase-img col-md-6">
             <img
-              src="./img/projects/project-mockup-1.png"
+              src="./img/projects/preview where should i go banner.webp"
               width="100%"
               alt="all-device-mockup"
             />
           </div>
           <div class="showcase-info col-md-6 d-flex flex-column">
-            <h3>Suppee</h3>
+            <div class="d-flex flex-row align-items-center">
+              <h3>Where Should I Go?</h3>
+              <span class="badge rounded-pill bg-primary ms-2">Medium</span>
+            </div>
 
-            <div class="tech-tag mb-3">
+            <h5 class="mb-3">Travel Companion Application</h5>
+
+            <p>
+              Don't know where to go? Why not use this amazing app to find
+              interesting places around your area on
+              <strong>google maps</strong> with cool informations from
+              <strong>TripAdvisor</strong>!
+            </p>
+            <div class="tech-tag">
               <button type="button" class="btn btn-xsm btn-outline-primary">
                 ReactJS
               </button>
               <button type="button" class="btn btn-xsm btn-outline-primary">
-                NextJS
-              </button>
-              <button type="button" class="btn btn-xsm btn-outline-primary">
-                MongoDB
-              </button>
-              <button type="button" class="btn btn-xsm btn-outline-primary">
                 NodeJS
               </button>
+              <button type="button" class="btn btn-xsm btn-outline-primary">
+                API
+              </button>
+              <button type="button" class="btn btn-xsm btn-outline-primary">
+                MUI
+              </button>
             </div>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </p>
 
             <div class="mt-3 showcase-link">
-              <button type="button" class="btn btn-primary me-1">
+              <a
+                class="btn btn-primary me-1"
+                href="https://thasup-where-should-i-go.netlify.app/"
+                role="button"
+                target="blank"
+              >
                 <i class="fas fa-globe-americas"></i> LIVE DEMO
-              </button>
-              <button type="button" class="btn btn-primary">
+              </a>
+
+              <a
+                class="btn btn-primary me-1"
+                href="https://github.com/thasup/where-should-i-go"
+                role="button"
+                target="blank"
+              >
                 <i class="fab fa-github"></i> GITHUB
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -476,11 +553,14 @@
               <li data-filter="*" class="filter-active">all</li>
               <li data-filter=".filter-react">react</li>
               <li data-filter=".filter-node">node</li>
+              <li data-filter=".filter-next">next</li>
               <li data-filter=".filter-bootstrap">bootstrap</li>
               <li data-filter=".filter-mongodb">mongodb</li>
+              <li data-filter=".filter-docker">docker</li>
+              <li data-filter=".filter-kubernetes">kubernetes</li>
               <li data-filter=".filter-scss">scss</li>
-              <li data-filter=".filter-next">next</li>
-              <li data-filter=".filter-ejs">ejs</li>
+              <li data-filter=".filter-typescript">typescript</li>
+              <li data-filter=".filter-api">api</li>
             </ul>
           </div>
 
@@ -488,40 +568,63 @@
           <div class="row portfolio-container">
             <!-- Project 1 -->
             <div
-              class="col-lg-4 col-md-6 portfolio-item filter-app filter-mongodb filter-react"
+              class="col-lg-4 col-md-6 portfolio-item filter-app filter-node filter-bootstrap filter-scss filter-api"
             >
               <div class="portfolio-wrap">
                 <img
-                  src="./img/projects/mockup1.jpg"
+                  src="./img/projects/Sentiment Analysis App square 2.png"
                   class="img-fluid"
-                  alt=""
+                  alt="Sentiment Analysis App"
                 />
                 <div
                   class="portfolio-info d-flex flex-column align-items-center"
                 >
-                  <a href="#">App 1</a>
+                  <a
+                    href="https://thasup-sentiment-analysis.netlify.app/"
+                    target="blank"
+                    title="Website"
+                    >Sentiment Analysis App</a
+                  >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Single page application that allows users to run Natural
+                    Language Processing (NLP) on articles or blogs found on
+                    other websites.
                   </p>
                   <div class="tech-tag">
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      ReactJS
-                    </button>
-                    <button type="button" class="btn btn-xsm btn-outline-light">
-                      NextJS
-                    </button>
-                    <button type="button" class="btn btn-xsm btn-outline-light">
-                      MongoDB
-                    </button>
-                    <button type="button" class="btn btn-xsm btn-outline-light">
                       NodeJS
                     </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      API
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      Bootstrap
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      SCSS
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      Netlify
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      Heroku
+                    </button>
                   </div>
+
                   <div class="portfolio-links d-flex flex-row">
-                    <a href="#" title="Website" class="me-3">
+                    <a
+                      href="https://thasup-sentiment-analysis.netlify.app/"
+                      target="blank"
+                      title="Website"
+                      class="me-3"
+                    >
                       <i class="fas fa-globe-americas"></i>
                     </a>
-                    <a href="#" title="Github">
+                    <a
+                      href="https://github.com/thasup/sentiment-analysis-app"
+                      target="blank"
+                      title="Github"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
@@ -532,40 +635,62 @@
 
             <!-- Project 2 -->
             <div
-              class="col-lg-4 col-md-6 portfolio-item filter-web filter-react"
+              class="col-lg-4 col-md-6 portfolio-item filter-app filter-node filter-scss filter-api"
             >
               <div class="portfolio-wrap">
                 <img
-                  src="./img/projects/mockup2.jpg"
+                  src="./img/projects/preview travel planer app.jpg"
                   class="img-fluid"
                   alt=""
                 />
                 <div
                   class="portfolio-info d-flex flex-column align-items-center"
                 >
-                  <a href="#">Web 1</a>
+                  <a
+                    href="https://thasup-travel-app.herokuapp.com/"
+                    target="blank"
+                    >Travel Planer App</a
+                  >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Travel planer app that obtains a desired trip location &
+                    date from the user and displays weather forecast, country
+                    information, and an image of the location using information
+                    obtained from external APIs.
                   </p>
                   <div class="tech-tag">
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      ReactJS
-                    </button>
-                    <button type="button" class="btn btn-xsm btn-outline-light">
-                      NextJS
-                    </button>
-                    <button type="button" class="btn btn-xsm btn-outline-light">
-                      MongoDB
-                    </button>
-                    <button type="button" class="btn btn-xsm btn-outline-light">
                       NodeJS
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      API
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      Webpack
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      Service Worker
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      SCSS
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      Heroku
                     </button>
                   </div>
                   <div class="portfolio-links d-flex flex-row">
-                    <a href="#" title="Website" class="me-3">
+                    <a
+                      href="https://thasup-travel-app.herokuapp.com/"
+                      target="blank"
+                      title="Website"
+                      class="me-3"
+                    >
                       <i class="fas fa-globe-americas"></i>
                     </a>
-                    <a href="#" title="Github">
+                    <a
+                      href="https://github.com/thasup/travel-planer-app"
+                      target="blank"
+                      title="Github"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
@@ -575,39 +700,55 @@
             <!-- End Project 2 -->
 
             <!-- Project 3 -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-web filter-bootstrap"
+            >
               <div class="portfolio-wrap">
                 <img
-                  src="./img/projects/mockup3.jpg"
+                  src="./img/projects/preview ipad tincat 2.png"
                   class="img-fluid"
-                  alt=""
+                  alt="tincat preview"
                 />
                 <div
                   class="portfolio-info d-flex flex-column align-items-center"
                 >
-                  <a href="#">Game 1</a>
+                  <a href="https://thasup.github.io/TinCat/" target="blank"
+                    >TinCat</a
+                  >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    A single landing page that shows 'TinCat', an application
+                    for cats who looking for hot kitties by wrapping all pages
+                    with the Bootstrap CSS framework.
                   </p>
                   <div class="tech-tag">
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      ReactJS
+                      jQuery
                     </button>
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      NextJS
+                      Bootstrap
                     </button>
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      MongoDB
+                      Netlify
                     </button>
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      NodeJS
+                      Gulp
                     </button>
                   </div>
+
                   <div class="portfolio-links d-flex flex-row">
-                    <a href="#" title="Website" class="me-3">
+                    <a
+                      href="https://thasup.github.io/TinCat/"
+                      target="blank"
+                      title="Website"
+                      class="me-3"
+                    >
                       <i class="fas fa-globe-americas"></i>
                     </a>
-                    <a href="#" title="Github">
+                    <a
+                      href="https://github.com/thasup/TinCat"
+                      target="blank"
+                      title="Github"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
@@ -617,39 +758,54 @@
             <!-- End Project 3 -->
 
             <!-- Project 4 -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-web filter-bootstrap"
+            >
               <div class="portfolio-wrap">
                 <img
-                  src="./img/projects/mockup4.jpg"
+                  src="./img/projects/mockup1.jpg"
                   class="img-fluid"
-                  alt=""
+                  alt="portfolio website"
                 />
                 <div
                   class="portfolio-info d-flex flex-column align-items-center"
                 >
-                  <a href="#">App 2</a>
+                  <a href="https://thanachon.me/" target="blank"
+                    >Portfolio Website</a
+                  >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    my lovely portfolio website deploy with real domain name on
+                    Netlify.
                   </p>
                   <div class="tech-tag">
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      ReactJS
+                      jQuery
                     </button>
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      NextJS
+                      Netlify
                     </button>
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      MongoDB
+                      Bootstrap
                     </button>
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      NodeJS
+                      Domain Name
                     </button>
                   </div>
+
                   <div class="portfolio-links d-flex flex-row">
-                    <a href="#" title="Website" class="me-3">
+                    <a
+                      href="https://thanachon.me/"
+                      target="blank"
+                      title="Website"
+                      class="me-3"
+                    >
                       <i class="fas fa-globe-americas"></i>
                     </a>
-                    <a href="#" title="Github">
+                    <a
+                      href="https://github.com/thasup/portfolio"
+                      target="blank"
+                      title="Github"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
@@ -659,17 +815,23 @@
             <!-- End Project 4 -->
 
             <!-- Project 5 -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-app filter-docker filter-node filter-mongodb"
+            >
               <div class="portfolio-wrap">
                 <img
                   src="./img/projects/mockup5.jpg"
                   class="img-fluid"
-                  alt=""
+                  alt="microservices tasks"
                 />
                 <div
                   class="portfolio-info d-flex flex-column align-items-center"
                 >
-                  <a href="#">Web 2</a>
+                  <a
+                    href="https://github.com/thasup/microservices-tasks"
+                    target="blank"
+                    >Microservices Tasks</a
+                  >
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
@@ -678,20 +840,25 @@
                       ReactJS
                     </button>
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      NextJS
+                      Docker
                     </button>
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      MongoDB
+                      Kubernetes
                     </button>
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      NodeJS
+                      Microservices
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      Ant Design
                     </button>
                   </div>
+
                   <div class="portfolio-links d-flex flex-row">
-                    <a href="#" title="Website" class="me-3">
-                      <i class="fas fa-globe-americas"></i>
-                    </a>
-                    <a href="#" title="Github">
+                    <a
+                      href="https://github.com/thasup/microservices-tasks"
+                      target="blank"
+                      title="Github"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
@@ -701,39 +868,57 @@
             <!-- End Project 5 -->
 
             <!-- Project 6 -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-app filter-node"
+            >
               <div class="portfolio-wrap">
                 <img
-                  src="./img/projects/mockup6.jpg"
+                  src="./img/projects/mockup3.jpg"
                   class="img-fluid"
-                  alt=""
+                  alt="weather journal"
                 />
                 <div
                   class="portfolio-info d-flex flex-column align-items-center"
                 >
-                  <a href="#">App 3</a>
+                  <a
+                    href="https://thasup-weather-journal-app.herokuapp.com/"
+                    target="blank"
+                    >Weather Journal App</a
+                  >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    This project is to create an asynchronous web app that uses
+                    Web API and user data to dynamically update the UI in a
+                    Weather Journal application by using Express as a server
+                    framework on Node.js.
                   </p>
                   <div class="tech-tag">
                     <button type="button" class="btn btn-xsm btn-outline-light">
-                      ReactJS
-                    </button>
-                    <button type="button" class="btn btn-xsm btn-outline-light">
-                      NextJS
-                    </button>
-                    <button type="button" class="btn btn-xsm btn-outline-light">
-                      MongoDB
-                    </button>
-                    <button type="button" class="btn btn-xsm btn-outline-light">
                       NodeJS
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      API
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      Express
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      Heroku
                     </button>
                   </div>
                   <div class="portfolio-links d-flex flex-row">
-                    <a href="#" title="Website" class="me-3">
+                    <a
+                      href="https://thasup-weather-journal-app.herokuapp.com/"
+                      target="blank"
+                      title="Website"
+                      class="me-3"
+                    >
                       <i class="fas fa-globe-americas"></i>
                     </a>
-                    <a href="#" title="Github">
+                    <a
+                      href="https://github.com/thasup/weather-journal-app"
+                      target="blank"
+                      title="Github"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
@@ -741,6 +926,149 @@
               </div>
             </div>
             <!-- End Project 6 -->
+
+            <!-- Project x -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+              <div class="portfolio-wrap">
+                <img
+                  src="./img/projects/preview dice game.jpg"
+                  class="img-fluid"
+                  alt="dice game"
+                />
+                <div
+                  class="portfolio-info d-flex flex-column align-items-center"
+                >
+                  <a href="https://thasup.github.io/dice-game/" target="blank"
+                    >Dice Game</a
+                  >
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <div class="tech-tag">
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      JavaScript
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      DOM
+                    </button>
+                  </div>
+                  <div class="portfolio-links d-flex flex-row">
+                    <a
+                      href="https://thasup.github.io/dice-game/"
+                      target="blank"
+                      title="Website"
+                      class="me-3"
+                    >
+                      <i class="fas fa-globe-americas"></i>
+                    </a>
+                    <a
+                      href="https://github.com/thasup/dice-game"
+                      target="blank"
+                      title="Github"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Project x -->
+
+            <!-- Project y -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+              <div class="portfolio-wrap">
+                <img
+                  src="./img/projects/preview laptop drumkit.jpg"
+                  class="img-fluid"
+                  alt="drum kit"
+                />
+                <div
+                  class="portfolio-info d-flex flex-column align-items-center"
+                >
+                  <a href="https://thasup.github.io/DrumKit/" target="blank"
+                    >DrumKit</a
+                  >
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <div class="tech-tag">
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      JavaScript
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      jQuery
+                    </button>
+                  </div>
+                  <div class="portfolio-links d-flex flex-row">
+                    <a
+                      href="https://thasup.github.io/DrumKit/"
+                      target="blank"
+                      title="Website"
+                      class="me-3"
+                    >
+                      <i class="fas fa-globe-americas"></i>
+                    </a>
+                    <a
+                      href="https://github.com/thasup/DrumKit"
+                      target="blank"
+                      title="Github"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Project y -->
+
+            <!-- Project z -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+              <div class="portfolio-wrap">
+                <img
+                  src="./img/projects/mockup2.jpg"
+                  class="img-fluid"
+                  alt="Simon game"
+                />
+                <div
+                  class="portfolio-info d-flex flex-column align-items-center"
+                >
+                  <a href="https://thasup.github.io/simon-game/" target="blank"
+                    >Simon Game</a
+                  >
+                  <p>
+                    Simon game is a mini JavaScript game, a practice project to
+                    learn how to use jQuery library instead of DOM manipulation
+                    to make it easier and faster to write code.
+                  </p>
+                  <div class="tech-tag">
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      JavaScript
+                    </button>
+                    <button type="button" class="btn btn-xsm btn-outline-light">
+                      jQuery
+                    </button>
+                  </div>
+                  <div class="portfolio-links d-flex flex-row">
+                    <a
+                      href="https://thasup.github.io/simon-game/"
+                      target="blank"
+                      title="Website"
+                      class="me-3"
+                    >
+                      <i class="fas fa-globe-americas"></i>
+                    </a>
+                    <a
+                      href="https://github.com/thasup/simon-game"
+                      target="blank"
+                      title="Github"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Project z -->
           </div>
           <!-- End Portfolio Container -->
         </div>
@@ -1048,6 +1376,9 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+
+    <!-- Add GLightBox -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
     <!-- Isotope Script CDN -->
     <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> -->
