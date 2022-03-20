@@ -103,7 +103,7 @@
               <a class="nav-link sections-name" id="experience-link">
                 Experience
               </a>
-              <ul class="nav-dropdown-menu">
+              <!-- <ul class="nav-dropdown-menu">
                 <li>
                   <a class="dropdown-item">Project 1</a>
                 </li>
@@ -116,7 +116,7 @@
                 <li>
                   <a class="dropdown-item">And Much More</a>
                 </li>
-              </ul>
+              </ul> -->
             </li>
             <li class="nav-item">
               <a class="nav-link sections-name" id="education-link"
@@ -334,7 +334,7 @@
             <img
               src="./img/projects/aurapan shop banner 2.webp"
               width="100%"
-              alt="all-device-mockup"
+              alt="aurapan banner"
             />
           </div>
           <div class="showcase-info col-md-6 d-flex flex-column">
@@ -345,20 +345,25 @@
 
             <h5 class="mb-3">Women's Clothing Online Shop</h5>
             <p>
-              Aurapan is the beautiful women's clothing e-commerce website built
-              with <strong>microservices architecture</strong>, perform
-              server-side rendering by <strong>Next.js</strong>, developing on
-              <strong>Google Cloud Platform</strong> environment with
-              <strong>Typescript</strong> as a back-end language.
+              <em>Aurapan</em> is a beautiful women's clothing e-commerce
+              website built with <strong>microservices architecture</strong>.
             </p>
 
             <p>
-              The project has perform CI/CD process by running automation test
-              <strong>Jest</strong> script with
-              <strong>GitHub Action</strong> workflow and deploy on
-              <strong>DigitalOcean</strong> Kubernetes cluster with
+              The entire app is deployed and runs in
+              <strong>Docker</strong> containers executed in a
+              <strong>Kubernetes</strong> cluster with
+              <strong>Typescript</strong> as a back-end language, performed
+              server-side rendering by <strong>Next.js</strong> with
               full-integrated <strong>Stripe</strong> and
-              <strong>Paypal</strong> payment services.
+              <strong>Paypal</strong> API payments, developed on
+              <strong>Google Cloud Platform</strong> environment.
+            </p>
+
+            <p>
+              The project has set CI/CD pipeline with
+              <strong>GitHub Action</strong> workflow and deploying on
+              <strong>DigitalOcean</strong> Kubernetes cluster.
             </p>
             <div class="tech-tag">
               <button type="button" class="btn btn-xsm btn-outline-primary">
@@ -414,9 +419,9 @@
         <div class="showcase row py-5">
           <div class="showcase-img col-md-6">
             <img
-              src="./img/projects/project-mockup-2.png"
+              src="./img/projects/banner suppee.webp"
               width="100%"
-              alt="all-device-mockup"
+              alt="suppee banner"
             />
           </div>
           <div class="showcase-info col-md-6 d-flex flex-column">
@@ -428,7 +433,12 @@
 
             <p>
               Suppee is an e-commerce platform built with the
-              <strong>MERN</strong> stack and <strong>Redux</strong>.
+              <strong>MERN</strong> stack, creating extensive back-end with
+              <strong>Express</strong>, managing global state with
+              <strong>Redux</strong>, working with a
+              <strong>MongoDB</strong> database and the Mongoose ODM, using
+              <strong>JWT</strong> authentication and integrating the
+              <strong>PayPal</strong> API.
             </p>
             <div class="tech-tag">
               <button type="button" class="btn btn-xsm btn-outline-primary">
@@ -445,6 +455,12 @@
               </button>
               <button type="button" class="btn btn-xsm btn-outline-primary">
                 NodeJS
+              </button>
+              <button type="button" class="btn btn-xsm btn-outline-primary">
+                API
+              </button>
+              <button type="button" class="btn btn-xsm btn-outline-primary">
+                Heroku
               </button>
             </div>
 
@@ -477,7 +493,7 @@
             <img
               src="./img/projects/preview where should i go banner.webp"
               width="100%"
-              alt="all-device-mockup"
+              alt="where-should-i-go banner"
             />
           </div>
           <div class="showcase-info col-md-6 d-flex flex-column">
@@ -488,11 +504,12 @@
 
             <h5 class="mb-3">Travel Companion Application</h5>
 
+            <p>Don't know where to go?</p>
             <p>
-              Don't know where to go? Why not use this amazing app to find
-              interesting places around your area on
+              Why not use this amazing app to find interesting places around
+              your area on
               <strong>google maps</strong> with cool informations from
-              <strong>TripAdvisor</strong>!
+              <strong>TripAdvisor</strong> API.
             </p>
             <div class="tech-tag">
               <button type="button" class="btn btn-xsm btn-outline-primary">
@@ -541,7 +558,7 @@
             <!-- Main Filter -->
             <ul class="portfolio-filters primary-filters" id="primary">
               <li data-filter="*" class="filter-active">all</li>
-              <li data-filter=".filter-app">app</li>
+              <li data-filter=".filter-app">web app</li>
               <li data-filter=".filter-web">web</li>
               <li data-filter=".filter-game">game</li>
             </ul>
@@ -566,7 +583,7 @@
 
           <!-- Start Portfolio Container -->
           <div class="row portfolio-container">
-            <!-- Project 1 -->
+            <!-- Sentiment Analysis App -->
             <div
               class="col-lg-4 col-md-6 portfolio-item filter-app filter-node filter-bootstrap filter-scss filter-api"
             >
@@ -631,9 +648,9 @@
                 </div>
               </div>
             </div>
-            <!-- End Project 1 -->
+            <!-- End Sentiment Analysis App -->
 
-            <!-- Project 2 -->
+            <!-- Travel Planer App -->
             <div
               class="col-lg-4 col-md-6 portfolio-item filter-app filter-node filter-scss filter-api"
             >
@@ -697,9 +714,9 @@
                 </div>
               </div>
             </div>
-            <!-- End Project 2 -->
+            <!-- End Travel Planer App -->
 
-            <!-- Project 3 -->
+            <!-- TinCat -->
             <div
               class="col-lg-4 col-md-6 portfolio-item filter-web filter-bootstrap"
             >
@@ -707,7 +724,7 @@
                 <img
                   src="./img/projects/preview ipad tincat 2.png"
                   class="img-fluid"
-                  alt="tincat preview"
+                  alt="tincat"
                 />
                 <div
                   class="portfolio-info d-flex flex-column align-items-center"
@@ -755,15 +772,15 @@
                 </div>
               </div>
             </div>
-            <!-- End Project 3 -->
+            <!-- End TinCat -->
 
-            <!-- Project 4 -->
+            <!-- Portfolio Website -->
             <div
               class="col-lg-4 col-md-6 portfolio-item filter-web filter-bootstrap"
             >
               <div class="portfolio-wrap">
                 <img
-                  src="./img/projects/mockup1.jpg"
+                  src="./img/projects/preview desktop portfolio.webp"
                   class="img-fluid"
                   alt="portfolio website"
                 />
@@ -812,10 +829,10 @@
                 </div>
               </div>
             </div>
-            <!-- End Project 4 -->
+            <!-- End Portfolio Website -->
 
-            <!-- Project 5 -->
-            <div
+            <!-- Microservices Tasks -->
+            <!-- <div
               class="col-lg-4 col-md-6 portfolio-item filter-app filter-docker filter-node filter-mongodb"
             >
               <div class="portfolio-wrap">
@@ -864,18 +881,18 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- End Project 5 -->
+            </div> -->
+            <!-- End Microservices Tasks -->
 
-            <!-- Project 6 -->
+            <!-- Weather Journal -->
             <div
               class="col-lg-4 col-md-6 portfolio-item filter-app filter-node"
             >
               <div class="portfolio-wrap">
                 <img
-                  src="./img/projects/mockup3.jpg"
+                  src="./img/projects/preview desktop weather 2.jpg"
                   class="img-fluid"
-                  alt="weather journal"
+                  alt="Weather Journal"
                 />
                 <div
                   class="portfolio-info d-flex flex-column align-items-center"
@@ -925,9 +942,9 @@
                 </div>
               </div>
             </div>
-            <!-- End Project 6 -->
+            <!-- End Weather Journal -->
 
-            <!-- Project x -->
+            <!-- dice game -->
             <div class="col-lg-4 col-md-6 portfolio-item filter-game">
               <div class="portfolio-wrap">
                 <img
@@ -942,7 +959,8 @@
                     >Dice Game</a
                   >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Feel lucky? Let's roll the dice to decide who will win with
+                    this simple web app.
                   </p>
                   <div class="tech-tag">
                     <button type="button" class="btn btn-xsm btn-outline-light">
@@ -972,9 +990,9 @@
                 </div>
               </div>
             </div>
-            <!-- End Project x -->
+            <!-- End dice game -->
 
-            <!-- Project y -->
+            <!-- drum kit -->
             <div class="col-lg-4 col-md-6 portfolio-item filter-game">
               <div class="portfolio-wrap">
                 <img
@@ -989,7 +1007,8 @@
                     >DrumKit</a
                   >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    A simple JavaScript game that allows you to play instruments
+                    with keyboard or mouse input.
                   </p>
                   <div class="tech-tag">
                     <button type="button" class="btn btn-xsm btn-outline-light">
@@ -1019,13 +1038,13 @@
                 </div>
               </div>
             </div>
-            <!-- End Project y -->
+            <!-- End drum kit -->
 
-            <!-- Project z -->
+            <!-- Simon game -->
             <div class="col-lg-4 col-md-6 portfolio-item filter-game">
               <div class="portfolio-wrap">
                 <img
-                  src="./img/projects/mockup2.jpg"
+                  src="./img/projects/preview desktop simon.jpg"
                   class="img-fluid"
                   alt="Simon game"
                 />
@@ -1037,8 +1056,8 @@
                   >
                   <p>
                     Simon game is a mini JavaScript game, a practice project to
-                    learn how to use jQuery library instead of DOM manipulation
-                    to make it easier and faster to write code.
+                    learn how to use jQuery library to make it easier and faster
+                    to write code.
                   </p>
                   <div class="tech-tag">
                     <button type="button" class="btn btn-xsm btn-outline-light">
@@ -1068,7 +1087,7 @@
                 </div>
               </div>
             </div>
-            <!-- End Project z -->
+            <!-- End Simon game -->
           </div>
           <!-- End Portfolio Container -->
         </div>
@@ -1093,16 +1112,10 @@
                   King Mongkut's Institute of Technology Ladkrabang
                 </h5>
                 <p>Bangkok, Thailand</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam in recusandae dicta veniam perspiciatis vitae, sed
-                  adipisci aut exercitationem harum molestiae soluta, temporibus
-                  ex dolore, inventore odio praesentium. Omnis, aliquam.
-                </p>
               </div>
 
               <!-- Professional Experience Sub Section -->
-              <h3 class="edu-title mt-5">Professional Experience</h3>
+              <!-- <h3 class="edu-title mt-5">Professional Experience</h3>
               <div class="edu-item mt-4">
                 <h5 class="edu-year">2018 - 2021</h5>
                 <h4>Mechanical, Electrical, and Plumbing Engineer</h4>
@@ -1122,8 +1135,9 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
+
             <div class="col-lg-6" id="certificate">
               <h3 class="edu-title">Certificate</h3>
 
@@ -1133,7 +1147,13 @@
                 <h4>TOEIC score : 890</h4>
                 <h5 class="edu-institute">CPA</h5>
                 <p>Listening part score : 480, Reading part score : 410</p>
-                <a class="btn btn-sm btn-primary" href="#"> See credential </a>
+                <a
+                  class="btn btn-sm btn-primary"
+                  target="blank"
+                  href="https://www.dropbox.com/s/9a1ylcljptv75vq/TOEIC%201-2-2022.pdf?dl=0"
+                >
+                  See credential
+                </a>
               </div>
 
               <!-- Certificate 2 -->
@@ -1171,8 +1191,8 @@
                 </ul>
                 <a
                   class="btn btn-sm btn-primary"
-                  target="_blank"
-                  href="https://graduation.udacity.com/confirm/WCPDZH5P"
+                  target="blank"
+                  href="https://www.dropbox.com/s/7mk3u6qpcear4x8/My_Udacity_Certification%20%28front%20end%20web%20developer%29.pdf?dl=0"
                 >
                   See credential
                 </a>
@@ -1205,8 +1225,8 @@
                 </ul>
                 <a
                   class="btn btn-sm btn-primary"
-                  target="_blank"
-                  href="https://www.udemy.com/certificate/UC-8fff3e6f-48dc-45e8-ba5b-2db3a68e59bd/"
+                  target="blank"
+                  href="https://www.dropbox.com/s/qifxvzzhrougo41/My_Udemy_Certification%20%28web%20developer%20bootcamp%29.pdf?dl=0"
                 >
                   See credential
                 </a>
