@@ -110,25 +110,13 @@ function addLinks(sections) {
 $(document).ready(addLinks(navLinks));
 
 // ------ Filter portfolio with Isotope script ------
-$(window).on("load", function () {
-  const iso = $(".portfolio-container").isotope({
+const iso = $(".portfolio-container").imagesLoaded(function () {
+  iso.isotope({
     // options...
     itemSelector: ".portfolio-item",
     layoutMode: "masonry",
   });
-  // fix images loading time issue before isotope script run
-  $(".portfolio-container").css({ opacity: 1 });
 });
-
-// filter functions object
-const filterFns = {
-  // show if contain with react tag
-  react: function () {
-    console.log(this);
-    let name = $(this).find(".tech-tag").children().text();
-    return name.match(/react/);
-  },
-};
 
 // defined variable to hold value
 var primaryFilterValue = "";
@@ -146,9 +134,7 @@ $(".portfolio-filters").on("click", function (event) {
     secondaryFilterValue = event.target.getAttribute("data-filter");
   }
 
-  let filterValue;
-  filterValue =
-    filterFns[filterValue] || `${primaryFilterValue}${secondaryFilterValue}`;
+  let filterValue = `${primaryFilterValue}${secondaryFilterValue}`;
 
   $(".portfolio-container").isotope({ filter: filterValue });
 });
