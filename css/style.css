@@ -51,6 +51,15 @@ body {
   border-color: var(--black);
 }
 
+/* Container */
+.container {
+  padding: 0 1.5rem;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+}
+
 /* Sections */
 .section-bg {
   background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
@@ -290,6 +299,55 @@ body {
 /* -------------------- 
     Experience Section
 -------------------- */
+#experience #cert2 img {
+  height: 30px;
+  margin: 0.5rem 0 1rem;
+}
+
+#experience #cert3 img {
+  height: 40px;
+  margin: 0.5rem 0 1rem;
+}
+
+#experience .exp-item {
+  padding: 0 0 20px 20px;
+  border-left: 2px solid var(--secondary-color);
+  position: relative;
+}
+
+#experience .exp-item::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: -11px;
+  top: 0;
+  background: #fff;
+  border: 3px solid var(--secondary-color);
+}
+
+#experience .exp-year {
+  color: var(--primary-light-color);
+}
+
+#experience h4 {
+  font-family: "Gelasio", serif;
+  color: var(--primary-sub-color);
+}
+
+#experience .exp-institute {
+  font-style: italic;
+}
+
+#experience #certificate .exp-institute {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* -------------------- 
+    Portfolio Section
+-------------------- */
 .tech-tag .btn-xsm {
   padding: 0.15rem 0.3rem;
   font-size: 0.75rem;
@@ -504,37 +562,6 @@ body {
     font-size: 14px;
     top: calc(50% - 80px);
   }
-}
-
-/* -------------------- 
-    Education Section
--------------------- */
-#education #cert2 img {
-  height: 30px;
-  margin: 0.5rem 0 1rem;
-}
-
-#education #cert3 img {
-  height: 40px;
-  margin: 0.5rem 0 1rem;
-}
-
-#education .edu-year {
-  color: var(--primary-light-color);
-}
-
-#education h4 {
-  font-family: "Gelasio", serif;
-  color: var(--primary-sub-color);
-}
-
-#education .edu-institute {
-  font-style: italic;
-}
-
-#education #certificate .edu-institute {
-  font-style: italic;
-  margin-bottom: 1rem;
 }
 
 /* -------------------- 
