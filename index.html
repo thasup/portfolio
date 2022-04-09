@@ -25,17 +25,17 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Add GLightBox -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
-    />
-
     <!-- Bootstrap Theme -->
     <link rel="stylesheet" href="./css/bootstrap.css" />
 
     <!-- Main CSS File -->
     <link href="./css/style.css" rel="stylesheet" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -269,11 +269,39 @@
         <!-- 1st Showcase Project -->
         <div class="showcase row py-5">
           <div class="showcase-img col-md-6">
-            <img
-              src="./img/projects/aurapan shop banner 2.webp"
-              width="100%"
-              alt="aurapan banner"
-            />
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./img/projects/aurapan shop banner 2.webp"
+                    alt="aurapan banner"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/projects/preview all devices aurapan.png"
+                    alt="aurapan banner"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/projects/aurapan shop banner 2.webp"
+                    width="100%"
+                    alt="aurapan banner"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/projects/aurapan shop banner 2.webp"
+                    width="100%"
+                    alt="aurapan banner"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
           <div class="showcase-info col-md-6 d-flex flex-column">
             <div class="d-flex flex-row align-items-center">
@@ -1523,8 +1551,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Add GLightBox -->
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- imagesLoaded CDN -->
     <script src="./js/imagesloaded.pkgd.min.js"></script>

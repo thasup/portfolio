@@ -109,6 +109,31 @@ function addLinks(sections) {
 
 $(document).ready(addLinks(navLinks));
 
+// ------ Swiper animation for image showcase ------
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  autoHeight: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  mousewheel: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  a11y: {
+    prevSlideMessage: "Previous slide",
+    nextSlideMessage: "Next slide",
+  },
+});
+
 // ------ Filter portfolio with Isotope script ------
 const iso = $(".portfolio-container").imagesLoaded(function () {
   iso.isotope({
