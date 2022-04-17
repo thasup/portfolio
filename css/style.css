@@ -56,10 +56,6 @@ body {
   padding: 0 1.5rem;
 }
 
-/* Desktop */
-@media (min-width: 768px) {
-}
-
 /* Sections */
 .section-bg {
   background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
