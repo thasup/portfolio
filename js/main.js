@@ -124,10 +124,6 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   mousewheel: true,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
   a11y: {
     prevSlideMessage: "Previous slide",
     nextSlideMessage: "Next slide",
