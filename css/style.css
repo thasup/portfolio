@@ -243,6 +243,20 @@ body {
   margin-bottom: 0;
 }
 
+.profile-img {
+  max-width: 300px;
+  width: 25vw;
+  height: auto;
+  padding: 15px;
+}
+
+/* Tablet, Mobile */
+@media (max-width: 768px) {
+  .profile-img {
+    width: 80vw;
+  }
+}
+
 /* -------------------- 
     Skills Section
 -------------------- */
