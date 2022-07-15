@@ -61,17 +61,7 @@ function addActiveSection() {
     let $section = $(section);
     const currentNavLink = $(`#${section.id}-link`);
     let position = window.scrollY + 300;
-    //debug
-    // console.log("section", section);
-    // console.log("$section", $section);
-    // console.log("position", position);
-    // console.log("currentNavLink", currentNavLink[0].id);
-    // console.log("offsetTop", section.offsetTop);
-    // console.log("offsetHeight", section.offsetHeight);
-    // console.log(
-    //     "section.offsetTop + section.offsetHeight",
-    //     section.offsetTop + section.offsetHeight
-    // );
+
     if (
       position >= $section.offset().top &&
       position <= $section.offset().top + $section.outerHeight()

@@ -362,6 +362,11 @@ body {
   padding: 0.15rem 0.3rem;
   font-size: 0.75rem;
   border-radius: 0.15rem;
+  cursor: default;
+}
+
+.tech-tag .btn-xsm:focus {
+  box-shadow: none;
 }
 
 .showcase-info {
@@ -639,9 +644,9 @@ footer div p {
   margin: 0;
 }
 
-footer div p:first-child {
+/* footer div p:first-child {
   margin-bottom: 1rem;
-}
+} */
 
 footer .footer-link {
   font-weight: 700;
