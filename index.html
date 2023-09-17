@@ -280,32 +280,6 @@
 								</li>
 							</ul>
 						</div>
-
-						<!-- <div class="exp-item">
-							<h5 class="exp-year">2018 - 2021</h5>
-							<h4>Mechanical, Electrical, and Plumbing Engineer</h4>
-							<h5 class="exp-institute">TOPARCH Ltd.</h5>
-							<p>Bangkok, Thailand</p>
-							<ul class="mb-0">
-								<li>
-									Managing and coordinating several constructors as the main constructor to build
-									the 200 unit condominiums
-								</li>
-								<li>
-									Managing construction of a hospital in Maesot, a housing estate in Ladkrabang,
-									renovation of fitness, offices in Zen Tower and Central Silom as a consultant
-								</li>
-								<li>
-									Drawing an architecture planning of community mall, housing estate, resort in
-									AutoCAD and creating 3D house models in Sketchup
-								</li>
-								<li>Estimating quantity and cost of building construction or renovation</li>
-								<li>
-									Inspecting and checking the condition of condominium unit and townhouse before
-									delivery to the customer
-								</li>
-							</ul>
-						</div> -->
 					</div>
 
 					<!-- Certification Section -->
@@ -1310,13 +1284,9 @@
 	<footer class="container-fluid bg-primary">
 		<div class="d-flex flex-column justify-content-center align-items-center">
 			<p>
-				© Copyright 2022
+				© Copyright <span id="currentYear"></span>
 				<a class="footer-link" target="_blank" href="https://github.com/thasup">thasup</a>
 			</p>
-			<!-- <p class="text-center">
-				🤗 Thank you all free photos from
-				<a class="footer-link" target="_blank" href="https://unsplash.com/">Unsplash</a>
-			</p> -->
 		</div>
 	</footer>
 
@@ -1346,6 +1316,17 @@
 
 	<!-- Main JS File -->
 	<script src="./js/main.js"></script>
+
+	<script>
+		// Get the current year
+		const currentYear = new Date().getFullYear();
+
+		// Find the element by its ID
+		const yearElement = document.getElementById("currentYear");
+
+		// Update the element's content with the current year
+		yearElement.textContent = currentYear;
+	</script>
 </body>
 
 </html>
